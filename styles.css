@@ -257,3 +257,17 @@ body {
     color: white;
   }
   
+  .about-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .about-content p {
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
