@@ -102,15 +102,27 @@ body {
     list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
   }
   
   #services li {
-    padding: 1rem;
+    padding: 1.5rem;
     background: #f8f8f8;
     border-left: 4px solid #00b04d;
     border-radius: 4px;
+    transition: transform 0.2s ease;
+  }
+  
+  #services li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  #services li p {
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
   }
   
   #gallery img {
