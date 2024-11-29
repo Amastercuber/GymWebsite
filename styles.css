@@ -12,11 +12,50 @@ body {
     text-align: center;
     padding: 2rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('images/logo.jpg') center/cover;
+    opacity: 0.1;
+    z-index: 1;
   }
   
   header img {
     width: 120px;
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+  }
+  
+  header h1, 
+  header p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin: 0;
+    opacity: 0.9;
   }
   
   header img:hover {
